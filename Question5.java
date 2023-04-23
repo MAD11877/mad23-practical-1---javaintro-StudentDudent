@@ -27,6 +27,12 @@ public class Question5
      */
      
     Scanner in = new Scanner(System.in);
-
+    System.out.println("Enter numbers: ");
+    for(int i=0; i<n; i++) {
+      arr[i] = Question4.nextInt();
+      sum=sum+arr[i];
+    }
+    float average = sum/n;
+    System.out.println("Average of number is : "+average);
   }
 }
