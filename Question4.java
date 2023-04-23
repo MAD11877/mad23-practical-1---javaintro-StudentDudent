@@ -18,13 +18,17 @@ public class Question4
      */
      
     Scanner in = new Scanner(System.in);
-    System.out.println("Enter a number:");
-    int number = Question4.nextInt();
-    String row = "*";
-    String line = row * number
-    while(number > 0) {
-      System.out.println(line);
-      row += "*";
-      i--;
+    System.out.println("Enter the number of rows: ");
+    int n=sc.nextInt(); 
+    for(int i=n;i>0;i--)
+    {
+      for(int j=0;j<i;j++)
+      {
+        System.out.print("*");
+      }
+        System.out.println();
+      }
+    }
   }
 }
+
